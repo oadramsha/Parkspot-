@@ -1,0 +1,220 @@
+.controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 200px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-leave {
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  color: white;
+}
+
+.btn-leave:hover {
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+.btn-leave:disabled {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-mode {
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  color: white;
+}
+
+.btn-mode:hover {
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+.btn-mode.active {
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(239, 239, 239, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 30px rgba(182, 133, 235, 0.6);
+  }
+}
+
+.photo-upload-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.photo-upload-content {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 90%;
+  margin: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.photo-upload-content h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 20px;
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.photo-upload-content p {
+  margin: 0 0 15px 0;
+  color: #7f8c8d;
+  font-size: 12px;
+}
+
+.photo-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px dashed #667eea;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+}
+
+.photo-input:hover {
+  border-color: #764ba2;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+.photo-preview {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.photo-preview img {
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.photo-actions {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.btn-upload {
+  padding: 12px;
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+}
+
+.btn-upload:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+.btn-upload:disabled {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-skip {
+  padding: 12px;
+  background: linear-gradient(135deg, #97a2d7 0%, #97a2d7 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+}
+
+.btn-skip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+.btn-cancel {
+  padding: 12px;
+  background: linear-gradient(135deg, #a29bfe 0%, #a29bfe 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(232, 67, 147, 0.3);
+}
+
+.btn-cancel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 67, 147, 0.4);
+}
