@@ -50,32 +50,7 @@ A full-stack, real-time parking platform that lets drivers share and claim open 
 
 ```
 
-**Real-time flow:** a user shares a spot, the server saves it and broadcasts `spotAdded` to every client, and a 5-minute timer is set. When someone claims it (or the timer ends), the server removes it and broadcasts `spotRemoved`, and user stats are updated.
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) 18 or 20 (recommended; some native packages such as `sqlite3` and `@tensorflow/tfjs-node` can fail to build on very new Node versions)
-- npm
-
-### Installation and running
-
-You need two terminals: one for the server and one for the client.
-
-**1. Start the server**
-
-```bash
-cd server
-npm install
-npm start
-```
-
-The server runs on **http://localhost:8000**. About 2 seconds after startup it adds 8 demo spots.
-
-**2. Start the client**
+**1. Start the client**
 
 ```bash
 cd client
