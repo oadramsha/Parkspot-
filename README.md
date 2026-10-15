@@ -23,6 +23,13 @@ A full-stack, real-time parking platform that lets drivers share and claim open 
 
 ---
 
+<img width="1407" height="817" alt="Screenshot 2026-10-14 at 5 57 52 PM" src="https://github.com/user-attachments/assets/a5eab0b7-c857-417c-bc49-172141f9386a" />
+<img width="1510" height="893" alt="Screenshot 2026-10-14 at 5 47 01 PM" src="https://github.com/user-attachments/assets/aa6f8d88-6baa-4669-825e-2ba283f0cacd" />
+<img width="1404" height="811" alt="Screenshot 2026-10-14 at 5 58 36 PM" src="https://github.com/user-attachments/assets/bc275deb-d45a-4256-85bf-f3f65d2710a0" />
+
+
+
+
 ## Tech Stack
 
 | Layer | Technologies |
